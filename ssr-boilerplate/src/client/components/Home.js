@@ -3,7 +3,10 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      I'm the home component
+      <div>
+        I'm the very good home component
+      </div>
+      <button onClick={() => console.log('Hi there!')}>Click Me!</button>
     </div>
   );
 };
