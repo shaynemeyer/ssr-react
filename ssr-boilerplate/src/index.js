@@ -15,7 +15,8 @@ app.use(
       opts.headers['x-forwarded-host'] = 'localhost:3000';
       return opts;
     }
-  }));
+  })
+);
 app.use(express.static('public'));
 app.get('*', (req, res) => {
   const store = createStore(req);
