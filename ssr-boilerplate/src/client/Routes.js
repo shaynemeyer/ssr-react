@@ -3,7 +3,7 @@ import App from './App';
 import HomePage from './pages/HomePage';
 import UserListPage, { loadData } from './pages/UsersListPage';
 import NotFoundPage from './pages/NotFoundPage';
-import AdminListPage from '/.page/AdminsListPage'
+import AdminListPage from './pages/AdminsListPage'
 export default [
   {
     ...App,
@@ -16,7 +16,7 @@ export default [
 
       {
         ...AdminListPage,
-        path: /'admins'
+        path: '/admins'
       },
       {
         ...UserListPage,
